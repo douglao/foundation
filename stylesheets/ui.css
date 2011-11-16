@@ -12,6 +12,7 @@
 :: Pagination
 :: Lists
 :: Panels
+:: Navigation Bar Drop Down
 */
 
 
@@ -183,5 +184,27 @@
 		margin: 0 0 20px 0;
 	}
 	
+/*	--------------------------------------------------
+   	Navigation Bar Dropdown
+	-------------------------------------------------- */
+
+
+#nav-bar { width: 100%; height: 58px; background: #00A5FF; -moz-box-shadow: 0 5px 5px rgba(0,0,0,.1); -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.1); box-shadow: 0 5px 5px rgba(0,0,0,.1);  }
+#nav-bar ul li {  float:left; display:block; position:relative; padding: 10px 0px 0px 10px; margin-right:10px; border:none; }
+#nav-bar ul li .drop { background: url('../images/arrow.png') no-repeat right center; padding-right: 20px; }
+#nav-bar ul li a { padding: 10px 10px 10px 20px; display: block; text-decoration: none; color: white; margin-left: 20px; font-weight: bold; }
+#nav-bar ul li a:hover { background: #eee; -moz-border-radius: 3px 3px 0px 0px; -webkit-border-radius: 3px 3px 0px 0px; border-radius: 3px 3px 0px 0px; z-index: 2; }  
+#nav-bar ul li:hover .align-right { margin-right: 20px; }
+#nav-bar ul li ul { display: none; }
+#nav-bar ul li:hover ul { display: block; position: absolute; color: gray; }
+#nav-bar ul li:hover ul li a { display: block; background: #eee;  }
+
+
+
+.dropdown-1 { background: #eee; margin: -9px 0px 0px -10px; width: 200px; padding: 20px 20px 20px 20px; -moz-border-radius: 0px 3px 3px 3px; -webkit-border-radius: 0px 3px 3px 3px; border-radius: 0px 3px 3px 3px; -moz-box-shadow: 0 5px 5px rgba(0,0,0,.1); -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.1); box-shadow: 0 5px 5px rgba(0,0,0,.1); }
+
+.dropdown-2 { background: #eee; margin: -9px 0px 0px -10px; width: 400px; padding: 20px 20px 20px 20px; -moz-border-radius: 0px 3px 3px 3px; -webkit-border-radius: 0px 3px 3px 3px; border-radius: 0px 3px 3px 3px; -moz-box-shadow: 0 5px 5px rgba(0,0,0,.1); -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.1); box-shadow: 0 5px 5px rgba(0,0,0,.1); }
+
+.dropdown-3 { background: #eee; margin: -9px 0px 0px -10px; width: 600px; padding: 20px 20px 20px 20px; -moz-border-radius: 0px 3px 3px 3px; -webkit-border-radius: 0px 3px 3px 3px; border-radius: 0px 3px 3px 3px; -moz-box-shadow: 0 5px 5px rgba(0,0,0,.1); -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.1); box-shadow: 0 5px 5px rgba(0,0,0,.1); }
 	
 
